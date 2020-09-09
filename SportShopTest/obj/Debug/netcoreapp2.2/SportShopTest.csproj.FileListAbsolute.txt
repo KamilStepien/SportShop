@@ -17,3 +17,5 @@ C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\obj\Debug\
 C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\bin\Debug\netcoreapp2.2\SportShopTest.pdb
 C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\obj\Debug\netcoreapp2.2\SportShopTest.dll
 C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\obj\Debug\netcoreapp2.2\SportShopTest.pdb
+C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Razor.dll
+C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShopTest\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Razor.xml

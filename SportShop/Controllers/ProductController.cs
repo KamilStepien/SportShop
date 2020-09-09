@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SportShop.Models;
+using SportShop.Models.ViewModels;
+
 
 namespace SportShop.Controllers
 {
@@ -18,11 +20,21 @@ namespace SportShop.Controllers
 
 
 
-        public ViewResult List(int productpage = 1)
-            => View(repository.Products
-            .OrderBy(p => p.ProductId)
-            .Skip((productpage - 1) * PageSize)
-            .Take(PageSize));
+        public ViewResult List(int productPage = 1)
+            => View(new ProductsListViewModel
+            {
+                Products = repository.Products
+                .OrderBy(p => p.ProductId)
+                .Skip((productPage - 1) * PageSize)
+                .Take(PageSize),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = productPage,
+                    ItemPerPage = PageSize,
+                    TotalItem = repository.Products.Count()
+                }
+            });
+            
         
     }
 }

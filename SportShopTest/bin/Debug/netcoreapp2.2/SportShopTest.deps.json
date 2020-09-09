@@ -13,7 +13,8 @@
           "Moq": "4.7.99",
           "SportShop": "1.0.0",
           "xunit": "2.4.0",
-          "xunit.runner.visualstudio": "2.4.0"
+          "xunit.runner.visualstudio": "2.4.0",
+          "Microsoft.AspNetCore.Razor": "2.2.0.0"
         },
         "runtime": {
           "SportShopTest.dll": {}
@@ -2364,6 +2365,14 @@
         "runtime": {
           "SportShop.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.Razor/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Razor.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
       }
     }
   },
@@ -3670,6 +3679,11 @@
     },
     "SportShop/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Razor/2.2.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
