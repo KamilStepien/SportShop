@@ -37,15 +37,23 @@ namespace SportShop
             app.UseStaticFiles();
             app.UseMvc(routes => {
                 routes.MapRoute(
-                     name: "paginginfo",
-                     template: "Produkt/Strona{productPage}",
+                     name: null,
+                     template: "{category}/Strona{productPage:int}",
                      defaults: new { Controller = "Product", action = "List" });
-
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Product}/{action=List}/{id?}");
+                    name: null,
+                    template: "Strona{productPage:int}",
+                    defaults: new { Controller = "Product", action = "List", productPage = 1  });
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new { Controller = "Product", action = "List", productPage = 1 });
+                routes.MapRoute(
+                    name: null,
+                    template: "",
+                    defaults: new { Controller = "Product", action = "List", productPage = 1 });
 
-    
+                routes.MapRoute(name: null, template: "{controller}/{action}/{id}");
             });
 
             

@@ -20,10 +20,11 @@ namespace SportShop.Controllers
 
 
 
-        public ViewResult List(int productPage = 1)
+        public ViewResult List(string category, int productPage = 1)
             => View(new ProductsListViewModel
             {
                 Products = repository.Products
+                .Where(p => p.Category == null || p.Category == category)
                 .OrderBy(p => p.ProductId)
                 .Skip((productPage - 1) * PageSize)
                 .Take(PageSize),
@@ -32,7 +33,10 @@ namespace SportShop.Controllers
                     CurrentPage = productPage,
                     ItemPerPage = PageSize,
                     TotalItem = repository.Products.Count()
-                }
+                },
+                CurrentCategory = category
+
+                
             });
             
         
