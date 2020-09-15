@@ -23,8 +23,13 @@ using SportShop.Models.ViewModels;
 
 #line default
 #line hidden
+#line 3 "C:\Users\Bezi\Desktop\c#_git\SportShop_aspNet\SportShop\SportShop\Views\_ViewImports.cshtml"
+using SportShop.Infrastructure;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c79c2e67aa9f52d8ca8306599caf245fb2f8ec2f", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"94572dd2f622a34e184b1978c3eb2abb8afe26a4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1e21f0ac6b300e326ab6dfe3c7f0ff13f1c2e2ef", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

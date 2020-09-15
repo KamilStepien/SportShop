@@ -39,19 +39,19 @@ namespace SportShop
                 routes.MapRoute(
                      name: null,
                      template: "{category}/Strona{productPage:int}",
-                     defaults: new { Controller = "Product", action = "List" });
+                     defaults: new { controller = "Product", action = "List" });
                 routes.MapRoute(
                     name: null,
                     template: "Strona{productPage:int}",
-                    defaults: new { Controller = "Product", action = "List", productPage = 1  });
+                    defaults: new { controller = "Product", action = "List", productPage = 1  });
                 routes.MapRoute(
                     name: null,
                     template: "{category}",
-                    defaults: new { Controller = "Product", action = "List", productPage = 1 });
+                    defaults: new { controller = "Product", action = "List", productPage = 1 });
                 routes.MapRoute(
                     name: null,
                     template: "",
-                    defaults: new { Controller = "Product", action = "List", productPage = 1 });
+                    defaults: new { controller = "Product", action = "List", productPage = 1 });
 
                 routes.MapRoute(name: null, template: "{controller}/{action}/{id}");
             });
